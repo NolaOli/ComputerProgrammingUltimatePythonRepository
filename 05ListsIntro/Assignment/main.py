@@ -66,3 +66,18 @@ print("[1, 2, 3] ->", all_unique([1, 2, 3]))
 print("[1, 2, 1] ->", all_unique([1, 2, 1]))
 print("[4, 4, 3] ->", all_unique([4, 4, 3]))
 print("[6, 5, 9] ->", all_unique([6, 5, 9]))
+
+def increasing(item):
+    first = item[0]
+    second = item[1]
+    third = item[2]
+
+    if first < second and second < third:
+        return True
+    else: 
+        return False
+    
+print("Is the list increasing?")
+print("[1, 2, 3] ->", increasing([1, 2, 3]))
+print("[4, 5, 6] ->", increasing([4, 5, 6]))
+print("[10, 12, 4] ->", increasing([10, 12, 4]))
