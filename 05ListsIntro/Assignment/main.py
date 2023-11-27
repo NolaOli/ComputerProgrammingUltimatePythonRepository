@@ -48,3 +48,21 @@ def all_the_same(item):
 print("Are all numbers the same?")
 print("[2, 2, 2] ->", all_the_same([2, 2, 2]))
 print("[1, 2, 2] ->", all_the_same([1, 2, 2]))
+
+def all_unique(item):
+    first = item[0]
+    second = item[1]
+    third = item[2]
+
+    if first == second or first == third:
+        return False
+    elif second == third:
+        return False
+    else:
+        return True
+    
+print("Are the numbers each unique?")
+print("[1, 2, 3] ->", all_unique([1, 2, 3]))
+print("[1, 2, 1] ->", all_unique([1, 2, 1]))
+print("[4, 4, 3] ->", all_unique([4, 4, 3]))
+print("[6, 5, 9] ->", all_unique([6, 5, 9]))
