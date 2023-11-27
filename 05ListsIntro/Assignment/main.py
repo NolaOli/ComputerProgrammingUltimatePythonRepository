@@ -39,5 +39,12 @@ def all_the_same(item):
     first = item[0]
     second = item[1]
     third = item[2]
+
+    if first == second and first == third:
+        return True
+    else:
+        return False
     
-    
+print("Are all numbers the same?")
+print("[2, 2, 2] ->", all_the_same([2, 2, 2]))
+print("[1, 2, 2] ->", all_the_same([1, 2, 2]))
