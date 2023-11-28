@@ -81,3 +81,39 @@ print("Is the list increasing?")
 print("[1, 2, 3] ->", increasing([1, 2, 3]))
 print("[4, 5, 6] ->", increasing([4, 5, 6]))
 print("[10, 12, 4] ->", increasing([10, 12, 4]))
+
+def all_true(item):
+    argument1 = item[0]
+    argument2 = item[1]
+    argument3 = item[2]
+
+    if argument1 == True and argument2 == True and argument3 == True:
+        return True
+    else:
+        return False
+    
+print("Are all values true?")
+print("True, True, True ->", all_true([True, True, True]))
+print("True, False, True ->", all_true([True, False, True]))
+print("False, False, False ->", all_true([False, False, False]))
+
+def mostly_true(item):
+    argument1 = item[0]
+    argument2 = item[1]
+    argument3 = item[2]
+
+    if argument1 == True and argument2 == True and argument3 == True:
+        return True
+    elif argument1 == True and argument2 == True:
+        return True
+    elif argument2 == True and argument3 == True:
+        return True
+    else:
+        return False
+    
+print("Is the list mostly true?")
+print("True, True, False ->", mostly_true([True, True, False]))
+print("True, False, False ->", mostly_true([True, False, False]))
+print("False, True, True ->", mostly_true([False, True, True]))
+print("True, True, True ->", mostly_true([True, True, True]))
+print("False, False, False ->", mostly_true([False, False, False]))
