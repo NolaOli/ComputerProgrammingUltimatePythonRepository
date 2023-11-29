@@ -117,3 +117,42 @@ print("True, False, False ->", mostly_true([True, False, False]))
 print("False, True, True ->", mostly_true([False, True, True]))
 print("True, True, True ->", mostly_true([True, True, True]))
 print("False, False, False ->", mostly_true([False, False, False]))
+
+def make_copy(item):
+    integer1 = item[0]
+    integer2 = item[1]
+    integer3 = item[2]
+    result = [integer1, integer2, integer3]
+
+    return result
+
+print("Copying the original list:")
+print("[1, 2, 3] ->", make_copy([1, 2, 3]))
+print("[3, 4, 5] ->", make_copy([3, 4, 5]))
+print("[1, 2, 7] ->", make_copy([1, 2, 7]))
+
+def repeat_thrice(item):
+    value1 = item
+    value2 = item
+    value3 = item
+    result = [value1, value2, value3]
+
+    return result
+
+print("Repeating a number thrice:")
+print("[3] ->", repeat_thrice(3))
+print("[4] ->", repeat_thrice(4))
+print("[5] ->", repeat_thrice(5))
+
+def make_reversed_copy(item):
+    argument1 = item[0]
+    argument2 = item[1]
+    argument3 = item[2]
+    result = [argument3, argument2, argument1]
+
+    return result
+
+print("Mirrored list:")
+print("[3, 2, 1] ->", make_reversed_copy([3, 2, 1]))
+print("[7, 2, 1] ->", make_reversed_copy([7, 2, 1]))
+print("[4, 2, 0] ->", make_reversed_copy([4, 2, 0]))
