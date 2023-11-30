@@ -156,3 +156,22 @@ print("Mirrored list:")
 print("[3, 2, 1] ->", make_reversed_copy([3, 2, 1]))
 print("[7, 2, 1] ->", make_reversed_copy([7, 2, 1]))
 print("[4, 2, 0] ->", make_reversed_copy([4, 2, 0]))
+
+def reverse_in_place(item):
+    value1 = item[0]
+    value2 = item[1]
+    value3 = item[2]
+
+    return [value3, value2, value1]
+
+print("Reverse list in place:")
+original_list = [1, 2, 3]
+new_list = reverse_in_place(original_list)
+print("Original list: ", original_list)
+print("New list: ", new_list)
+
+
+
+
+
+
