@@ -49,3 +49,21 @@ inputlist = [0, 20, 5, 50, 10, 80, 35, 32, 29]
 result = average_act_score(inputlist)
 print("Average ACT score: ")
 print(result)
+
+def all_true(list):
+    boolean1 = list[0]
+    boolean2 = list[1]
+    boolean3 = list[2]
+    for boolean in list:
+        if boolean1 == "True" and boolean2 == "True" and boolean3 == "True":
+            return True
+    else:
+        return False
+    
+print("Is boolean list all true?")
+print(all_true(["True", "True", "True"]))
+print(all_true(["True", "False", "True"]))
+print(all_true(["False", "False", "False"]))
+print(all_true(["True", "True", "True"]))
+print(all_true(["True", "True", "False"]))
+    
