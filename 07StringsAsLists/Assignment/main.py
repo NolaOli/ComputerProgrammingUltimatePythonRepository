@@ -49,14 +49,14 @@ print(count_target_letters("again"))
 print(count_target_letters("all around the wall"))
 
 def in_alphabetical_order(word):
-    alpha = "a"
+    alpha = "abcdefghijklmnopqrstuvwxyz"
     for letter in word:
-        if letter > alpha:
-            return False
-    return True
+        if letter in "abcdefghijklmnopqrstuvwxyz" and letter != alpha:
+            return True
+    return False
 
 print("Is it in alphabetical order?")
-print(in_alphabetical_order("abcdefg"))
+print(in_alphabetical_order("bcdefg"))
 print(in_alphabetical_order("untidy"))
         
 
