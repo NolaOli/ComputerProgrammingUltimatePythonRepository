@@ -134,4 +134,42 @@ print(increasing([5, 6, 3]))
 print(increasing([1, 4, 2]))
 print(increasing([10, 11, 12]))
 
+def is_incrementing(integer):
+    item1 = integer[0]
+    item2 = integer[1]
+    item3 = integer[2]
+    for item in integer:
+        if item2 == item1 + 1 and item3 == item2 + 1:
+            return True
+        else:
+            return False
+        
+print("Is the line incrementing?")
+print(is_incrementing([1, 2, 3]))
+print(is_incrementing([1, 3, 4]))
+print(is_incrementing([7, 8, 9]))
+print(is_incrementing([5, 5, 5]))
+
+def has_adjacent_repeat(integer):
+    item1 = integer[0]
+    item2 = integer[1]
+    item3 = integer[2]
+    for item in integer:
+        if item1 == item2:
+            return True
+        elif item1 == item3:
+            return True
+        elif item2 == item3:
+            return True
+        else:
+            return False
+        
+print("Is there an adjacent repeat in the list?")
+print(has_adjacent_repeat([1, 2, 2]))
+print(has_adjacent_repeat([1, 2, 3]))
+print(has_adjacent_repeat([3, 6, 7]))
+print(has_adjacent_repeat([6, 6, 6]))
+
+
+
 
