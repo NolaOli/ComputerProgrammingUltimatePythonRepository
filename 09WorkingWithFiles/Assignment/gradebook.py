@@ -3,7 +3,7 @@ import os
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-f = open("09WorkingWithFiles/data/gradebook_data.csv", "r")
+f = open("../data/gradebook_data.csv", "r")
 reader = csv.reader(f)
 Acount = 0
 Bcount = 0
