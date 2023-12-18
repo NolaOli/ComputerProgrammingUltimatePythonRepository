@@ -18,9 +18,9 @@ def most_vowels(wordlist):
         if curr_count > mostVowels:
             mostVowels = curr_count
             wordWithMostVowels = (word)
-    #return wordWithMostVowels, mostVowels
+    return wordWithMostVowels, mostVowels
                 
-#print("The word with the most vowels is :", most_vowels(words))
+print("The word with the most vowels is :", most_vowels(words))
 
 f.close()
 
@@ -41,6 +41,8 @@ avg_length = total_length / word_amount
 print("The average wordlength of the list is:", avg_length, "letters.")
 
 f.close()
+
+
 
 
         
