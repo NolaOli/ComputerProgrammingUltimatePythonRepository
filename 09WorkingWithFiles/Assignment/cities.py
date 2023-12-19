@@ -29,3 +29,15 @@ for city in cities:
 longest_city_name = (city["city"])
 
 print("The city with the longest name is:", longest_city_name, letter_amount)
+
+
+
+
+
+def count_letters(word):
+    count = 0
+    letters = 0
+    for letter in word:
+        if letter in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ":
+            letters = letter + 1
+    return count + letters
