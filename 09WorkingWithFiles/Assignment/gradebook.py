@@ -60,7 +60,21 @@ for row in reader:
         amount_of_grades = amount_of_grades + 1
 average_grade = int(overall_score) / int(amount_of_grades)
 
-print("The average grade for ALL grades is:", average_grade)
+#print("The average grade for ALL grades is:", average_grade)
 #print("The average gr
 
 f.close()
+
+f = open("../data/gradebook_data.csv", "r")
+reader = csv.reader(f)
+for row in reader:
+    names, gradelevel, percent = row
+    gradelevel = int(gradelevel)
+    percent = int(percent)
+    names = ""
+    print(gradelevel, percent, name)
+    if gradelevel == 12 and percent <= 60:
+        names = names + name
+
+print("Seniors with failing grades:", names)
+
